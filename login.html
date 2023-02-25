@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+<body>
+<center>
+
+<style>
+body{
+	background-image: url('https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+</style>
+	
+	<img src="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_256px.png" width="70" height="50">
+	<p style="color:white;">Gmail Login</p>
+	</center>
+	<center>
+		
+	<div class="main">
+	<div class="register">
+	<h2>Register Here</h2>
+	<form id="register" method="post">
+	<div>
+	<label>Name:</label>
+	<br>
+	<input type="text" name="name" id="name" placeholder="Enter Your Name">
+	<br><br>
+	</div>
+	<label>Your Age:</label>
+	<br>
+	<input type="number" name="age" id="name" placeholder="How old are You?">
+	<br><br>
+	<label>Email:</label>
+	<br>
+	<input type required pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" id="email" name="email" placeholder="Email">
+	<br><br>
+	<input type="submit"> 
+	<br><br>
+	
+	<label>Password:</label>
+	<br>
+ <input type="password"  id="myInput" placeholder="Password"><br><br>
+<input type="checkbox" value="FakePSW" onclick="myFunction()"><label style="color:white">Show Password</label>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type == "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+	<br><br>
+	<label style="color:white;">Gender:</label>
+	<br><br>
+	&nbsp;&nbsp;&nbsp;
+	<input type ="radio" name="gender" id="male">
+	&nbsp;
+	<span id="male"><label style="color:white;">Male</label></span>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="gender" id="female" >
+	&nbsp;
+	<span id="female"><label style="color:white;">Female</label></span>
+	<br><br>
+ 	</form>
+	<a href="anotherpage.html">
+<button>Submit</button>
+</a>
+	</center>
+	</body>
+</html>
+	
+
